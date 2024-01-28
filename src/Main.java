@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+// 型とは「格納するデータに制約をかける仕組み
+//
 public class Main {
     public static void main(String[] args) {
-        // ジェネリクス型について調べる
-        List<String> names = new ArrayList<>();
-        names.add("kuma");
-        names.add("kumazirou ");
+        Pocket<String> pockets = new Pocket<>();
+        pockets.add("2024");
+        String thisYear = pockets.get();
+        System.out.println(thisYear);
     }
 
 }
